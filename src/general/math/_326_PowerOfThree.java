@@ -1,0 +1,15 @@
+package general.math;
+
+// https://leetcode.com/problems/power-of-three/description/
+
+public class _326_PowerOfThree {
+    public boolean isPowerOfThree(int n) {
+        if(n == 0){
+            return false;
+        }
+        else if( n==1 ){
+            return true;
+        }
+        else return n % 3 == 0 && isPowerOfThree(n / 3);
+    }
+}

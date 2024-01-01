@@ -1,4 +1,4 @@
-package bitOperations;
+package bitoperations;
 
 public class _67_AddBinary {
     public String addBinary(String a, String b) {

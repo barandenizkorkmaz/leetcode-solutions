@@ -1,4 +1,4 @@
-package twoPointers;
+package twopointers;
 
 import util.ListNode;
 

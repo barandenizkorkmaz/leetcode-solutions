@@ -1,4 +1,4 @@
-package bitOperations;
+package bitoperations;
 
 // https://leetcode.com/problems/single-number/
 

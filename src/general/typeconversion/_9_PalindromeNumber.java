@@ -1,4 +1,4 @@
-package general.typeConversion;
+package general.typeconversion;
 
 // https://leetcode.com/problems/palindrome-number/
 

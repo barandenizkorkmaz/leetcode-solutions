@@ -1,4 +1,4 @@
-package linkedList;
+package twopointers;
 
 // https://leetcode.com/problems/linked-list-cycle/
 

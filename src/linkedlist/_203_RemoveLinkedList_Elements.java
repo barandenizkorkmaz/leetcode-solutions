@@ -1,4 +1,4 @@
-package linkedList;
+package linkedlist;
 
 // https://leetcode.com/problems/remove-linked-list-elements/
 

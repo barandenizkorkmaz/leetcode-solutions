@@ -10,12 +10,7 @@ public class _450_DeleteNodeInABST {
     }
 
     private int getMin(TreeNode node){
-        if(node.left == null){
-            return node.val;
-        }
-        else{
-            return getMin(node.left);
-        }
+        return node.left == null ? node.val : getMin(node.left);
     }
 
     private TreeNode deleteNodeRecurse(TreeNode node, int key){

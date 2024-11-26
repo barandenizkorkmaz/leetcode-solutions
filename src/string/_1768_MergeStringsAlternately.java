@@ -4,17 +4,21 @@ package string;
 
 public class _1768_MergeStringsAlternately {
     public String mergeAlternately(String word1, String word2) {
-        StringBuilder result = new StringBuilder();
-        int i = 0;
-        while (i < word1.length() || i < word2.length()) {
-            if (i < word1.length()) {
-                result.append(word1.charAt(i));
-            }
-            if (i < word2.length()) {
-                result.append(word2.charAt(i));
-            }
-            i++;
+        StringBuilder stringBuilder = new StringBuilder();
+        int current = 0;
+        int lengthOfWord1 = word1.length();
+        int lengthOfWord2 = word2.length();
+        int minLength = Math.min(lengthOfWord1, lengthOfWord2);
+        for(int i = 0 ; i < minLength; i++){
+            stringBuilder.append(word1.charAt(i));
+            stringBuilder.append(word2.charAt(i));
         }
-        return result.toString();
+        if(lengthOfWord1 > lengthOfWord2){
+            stringBuilder.append(word1.substring(minLength));
+        }
+        else{
+            stringBuilder.append(word2.substring(minLength));
+        }
+        return stringBuilder.toString();
     }
 }

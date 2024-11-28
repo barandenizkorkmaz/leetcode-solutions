@@ -14,6 +14,15 @@ public class Main {
 
         System.out.println("Result is: " + result);
 
+        int[][] arr2 = {
+                {1,2,3},
+                {4,5,6}
+        };
+        int[] row = arr2[0];
+        for(int num : row){
+            System.out.println(num);
+        }
+
         System.out.println("Hello world!");
     }
 }

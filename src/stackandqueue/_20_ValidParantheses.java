@@ -21,7 +21,6 @@ public class _20_ValidParantheses {
                 else if(c == ']' && stack.pop() != '['){
                     return false;
                 }
-
             }
         }
         return stack.isEmpty();

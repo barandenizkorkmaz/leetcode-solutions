@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 public class _347_TopKFrequentElements {
-    class EntityComparator implements Comparator<Entity> {
+    class EntityComparator implements Comparator<Entity>{
         public int compare(Entity entity1, Entity entity2){
             return entity2.count - entity1.count;
         }
@@ -24,7 +24,9 @@ public class _347_TopKFrequentElements {
 
     public int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> numOccurences = new HashMap<>();
-        PriorityQueue<Entity> pq = new PriorityQueue<>(new EntityComparator());
+        PriorityQueue<Entity> pq = new PriorityQueue<>((e1, e2) -> e2.count - e1.count);
+        // or
+        // PriorityQueue<Entity> pq = new PriorityQueue<>(new EntityComparator());
         for(int num : nums){
             numOccurences.put(num, numOccurences.getOrDefault(num, 0) + 1);
         }

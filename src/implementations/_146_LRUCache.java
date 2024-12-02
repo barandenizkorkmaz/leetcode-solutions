@@ -3,7 +3,7 @@ package implementations;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LRUCache {
+class LRUCache {
     class Node{
         int key;
         int val;

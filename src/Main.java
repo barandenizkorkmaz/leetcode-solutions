@@ -1,4 +1,7 @@
+import java.util.List;
+
 import static array.SubarrayEqualSum.findMinOperations;
+import trie.FindCompoundWords;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,6 +26,14 @@ public class Main {
             System.out.println(num);
         }
 
+        // Find Compound Words
+        String[] words = {"rock", "star", "rockstar"};
+        List<String> compoundWords = FindCompoundWords.findCompoundWords(words);
+        System.out.printf("Found %d compound word(s).\n", compoundWords.size());
+        for(String compoundWord : compoundWords){
+            System.out.println(compoundWord);
+        }
+        System.out.println("End of compound words.");
         System.out.println("Hello world!");
     }
 }

@@ -3,7 +3,7 @@ package graph;
 import java.util.*;
 
 public class _200_NumberOfIslands {
-    class Point{
+    static class Point{
         int x;
         int y;
 
